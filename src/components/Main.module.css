@@ -1,0 +1,15 @@
+main {
+    background-color: black;
+    min-height: 300px;
+}
+
+.boxed {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px 0;
+}
+
+.boxed p {
+    color: white;
+}

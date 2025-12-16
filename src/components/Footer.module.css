@@ -1,0 +1,90 @@
+.boxed {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    padding: 0px;
+}
+
+/* -----------------------------FASCIA BACK-------------------------- */
+
+.fascia_image {
+    background-image: url(/img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footermenu {
+    padding: 20px 0;
+    width: 50%;
+    display: flex;
+    gap: 2.5rem;
+}
+
+.dc_back {
+    background-image: url(/img/dc-logo-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+}
+
+.col_menu h2 {
+    color: white;
+}
+
+.col_menu ul {
+    padding-left: 0;
+}
+
+.col_menu li {
+    list-style: none;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.col_menu a {
+    text-decoration: none;
+    color: rgb(187, 187, 187);
+}
+
+.col_menu a:hover {
+    color: blue;
+}
+
+/* -----------------------------FASCIA GRIGIA-------------------------- */
+
+.fascia_grey {
+    background-color: rgb(50, 50, 50);
+}
+
+.fascia_grey .boxed {
+    justify-content: space-between;
+}
+
+.socialmenu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.socialmenu h3 {
+    color: rgb(0, 94, 255);
+}
+
+.fascia_grey .boxed {
+    padding: 10px 0;
+    align-items: center;
+}
+
+.fascia_grey button {
+    background: transparent;
+    border: 2px solid rgb(0, 94, 255);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.fascia_grey button:hover {
+    background-color: rgb(0, 94, 255);
+}

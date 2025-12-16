@@ -1,7 +1,9 @@
+import style from "./Main.module.css"
+
 function Main() {
     return (
         <main>
-            <div className="boxed">
+            <div className={style.boxed}>
                 <p>Content goes here</p>
             </div>
 

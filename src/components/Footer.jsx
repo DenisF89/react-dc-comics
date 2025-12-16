@@ -1,34 +1,14 @@
+import style from "./Footer.module.css"
+import BlueBand from "./BlueBand.jsx"
+
 function Footer() {
     return (
         <footer>
-            <div className="fascia_blu">
-                <div className="boxed">
-                    <div className="card_shop">
-                        <img src="/img/buy-comics-digital-comics.png" alt="" />
-                        <p>DIGITAL COMICS</p>
-                    </div>
-                    <div className="card_shop">
-                        <img src="/img/buy-comics-merchandise.png" alt="" />
-                        <p>DC MERCHANDISE</p>
-                    </div>
-                    <div className="card_shop">
-                        <img src="/img/buy-comics-subscriptions.png" alt="" />
-                        <p>SUBSCRIPTION</p>
-                    </div>
-                    <div className="card_shop">
-                        <img src="/img/buy-comics-shop-locator.png" alt="" />
-                        <p>COMIC SHOP LOCATOR</p>
-                    </div>
-                    <div className="card_shop">
-                        <img src="/img/buy-dc-power-visa.svg" alt="" />
-                        <p>DC POWER VISA</p>
-                    </div>
-                </div>
-            </div>
-            <div className="fascia_image">
-                <div className="boxed">
-                    <div className="footermenu">
-                        <div className="col_menu">
+            <BlueBand />
+            <div className={style.fascia_image}>
+                <div className={style.boxed}>
+                    <div className={style.footermenu}>
+                        <div className={style.col_menu}>
                             <h2>DC COMICS</h2>
                             <ul>
                                 <li><a href="#">Characters</a></li>
@@ -46,7 +26,7 @@ function Footer() {
                             </ul>
                         </div>
 
-                        <div className="col_menu">
+                        <div className={style.col_menu}>
                             <h2>DC</h2>
                             <ul>
                                 <li><a href="#">Terms Of Use</a></li>
@@ -63,7 +43,7 @@ function Footer() {
                             </ul>
                         </div>
 
-                        <div className="col_menu">
+                        <div className={style.col_menu}>
                             <h2>SITES</h2>
                             <ul>
                                 <li><a href="#">DC</a></li>
@@ -74,16 +54,16 @@ function Footer() {
                             </ul>
                         </div>
                     </div>
-                    <div className="dc_back"></div>
+                    <div className={style.dc_back}></div>
                 </div>
             </div>
 
-            <div className="fascia_grey">
-                <div className="boxed">
+            <div className={style.fascia_grey}>
+                <div className={style.boxed}>
                     <button>
                         SIGN-UP NOW!
                     </button>
-                    <nav className="socialmenu">
+                    <nav className={style.socialmenu}>
                         <h3>FOLLOW US</h3>
                         <a href="#"><img src="/img/footer-facebook.png" alt="" /></a>
                         <a href="#"><img src="/img/footer-periscope.png" alt="" /></a>

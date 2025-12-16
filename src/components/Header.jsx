@@ -1,12 +1,14 @@
+import style from "./Header.module.css"
+
 function Header() {
 
     return (
         <header>
-            <div className="boxed">
-                <div className="logo">
+            <div className={style.boxed}>
+                <div className={style.logo}>
                     <img src="/img/dc-logo.png" alt="Logo" />
                 </div>
-                <nav className="menu">
+                <nav className={style.menu}>
                     <ul>
                         <li><a href="#">CHARACTER</a></li>
                         <li><a href="#">COMICS</a></li>
