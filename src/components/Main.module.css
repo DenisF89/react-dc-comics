@@ -1,15 +1,50 @@
 main {
     background-color: black;
-    min-height: 300px;
+}
+
+main h3 {
+    background-color: rgb(0, 94, 255);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    position: absolute;
+    top: -40px;
+}
+
+.cartoonband {
+    background-image: url("/img/jumbotron.jpg");
+    height: 350px;
+    background-size: cover;
 }
 
 .boxed {
     width: 1200px;
     margin: 0 auto;
     display: flex;
-    padding: 10px 0;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    gap: 18px;
+    position: relative;
 }
 
-.boxed p {
+.card {
+    width: 180px;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card .cover {
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.card p {
     color: white;
 }

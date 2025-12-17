@@ -59,6 +59,8 @@
 
 .fascia_grey .boxed {
     justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
 }
 
 .socialmenu {
@@ -69,11 +71,6 @@
 
 .socialmenu h3 {
     color: rgb(0, 94, 255);
-}
-
-.fascia_grey .boxed {
-    padding: 10px 0;
-    align-items: center;
 }
 
 .fascia_grey button {

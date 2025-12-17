@@ -2,6 +2,8 @@ import style from "./Header.module.css"
 
 function Header() {
 
+    const listaMenu = ["CHARACTERS", "COMICS", "MOVIES", "TV", "GAMES", "COLLECTIBLES", "VIDEOS", "FUNS", "NEWS", "SHOP"];
+
     return (
         <header>
             <div className={style.boxed}>
@@ -10,16 +12,11 @@ function Header() {
                 </div>
                 <nav className={style.menu}>
                     <ul>
-                        <li><a href="#">CHARACTER</a></li>
-                        <li><a href="#">COMICS</a></li>
-                        <li><a href="#">MOVIES</a></li>
-                        <li><a href="#">TV</a></li>
-                        <li><a href="#">GAMES</a></li>
-                        <li><a href="#">COLLECTIBLES</a></li>
-                        <li><a href="#">VIDEOS</a></li>
-                        <li><a href="#">FUNS</a></li>
-                        <li><a href="#">NEWS</a></li>
-                        <li><a href="#">SHOP</a></li>
+                        {
+                            listaMenu.map((link, index) =>
+                                <li key={index + "_menu"}><a href={link}>{link}</a></li>
+                            )
+                        }
                     </ul>
                 </nav>
             </div>
