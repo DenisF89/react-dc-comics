@@ -18,7 +18,7 @@
     padding: 20px 0;
     width: 50%;
     display: flex;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .dc_back {
@@ -48,7 +48,8 @@
 }
 
 .col_menu a:hover {
-    color: blue;
+    text-decoration: underline;
+    color: white;
 }
 
 /* -----------------------------FASCIA GRIGIA-------------------------- */

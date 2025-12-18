@@ -1,5 +1,6 @@
 const menufooter = [
     {
+        id: "dc_comics",
         titolo: "DC COMICS",
         lista: [
             {linktitle: "Characters",   link: "",   id: 1},
@@ -12,6 +13,7 @@ const menufooter = [
         ]
     },
     {
+        id: "shop",
         titolo: "SHOP",
         lista: [
             {linktitle: "Shop DC",              link: "",   id: 1},
@@ -19,6 +21,7 @@ const menufooter = [
         ]
     },
     {
+        id: "dc",
         titolo: "DC",
         lista: [
             {linktitle: "Terms Of Use",     link: "",   id: 1},
@@ -35,6 +38,7 @@ const menufooter = [
         ]
     },
     {
+        id: "sites",
         titolo: "SITES",
         lista: [
             {linktitle: "DC",               link: "",   id: 1},

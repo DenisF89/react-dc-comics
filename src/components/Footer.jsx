@@ -1,31 +1,27 @@
 import style from "./Footer.module.css"
-import BlueBand from "./BlueBand.jsx"
+import BlueBand from "./BlueBand"
 import menu from "./vocimenu.js"
+import FooterMenu from "./FooterMenu";
 
 function Footer() {
+
+    /*  GESTIONE COLONNE MENU DA RECUPERO ID
+    Recupero gli id-menu da visualizzare
+    const menuID = menu.map(m=> m.id);
+    const layout = [[menuID[0],menuID[1]],[menuID[2]],[menuID[3]]]; 
+    */
+
+    const layout = [2,1,1]; //Gestisco le colonne menu del footer 
+                            //Es: 1°col=>2menu,2°col=>1 menu,3°col=>1menu
+
     return (
         <footer>
             <BlueBand />
             <div className={style.fascia_image}>
                 <div className={style.boxed}>
-                    <div className={style.footermenu}>
-                        <div className={style.col_menu}>
-                            {menu.slice(0, 2).map((menu,index)=><>
-                                <h2>{menu.titolo}</h2>
-                                <ul>
-                                    {menu.lista.map(link=><li><a href="#">{link.linktitle}</a></li>)}  
-                                </ul> 
-                            </>)}
-                        </div>
-                            {menu.slice(2).map((menu,index)=>
-                            <div className={style.col_menu}>
-                                <h2>{menu.titolo}</h2>
-                                <ul>
-                                    {menu.lista.map(link=><li><a href="#">{link.linktitle}</a></li>)}  
-                                </ul> 
-                            </div>
-                            )}
-                    </div>
+
+                    <FooterMenu menu={menu} layout={layout} /> {/* Component con props */}
+
                     <div className={style.dc_back}></div>
                 </div>
             </div>
