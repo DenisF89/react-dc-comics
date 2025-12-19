@@ -1,22 +1,20 @@
 import style from "./Main.module.css"
-import comics from "./comics.js"
+import comics from "../data/comics.js"
+import Card from "./Card.jsx";
 
 function Main() {
     return (
         <main>
             <div className={style.cartoonband}></div>
             <div className={style.boxed}>
-
                 <h3>CURRENT SERIES</h3>
-                {
+                {   // Creo un componente Card per ogni elemento dell'array comics, a cui passo i dati con le props
                     comics.map(card =>
-
-                        <div key={card.id} className={style.card}>
-                            <div className={style.cover}>
-                                <img src={card.thumb} alt={card.title} />
-                            </div>
-                            <p>{card.title}</p>
-                        </div>
+                        <Card 
+                        key={card.id} //non viene passata come props, serve a React come elemento univoco di map
+                        img={card.thumb} //prop img
+                        title={card.title} //prop title
+                        />
                     )
                 }
             </div>

@@ -26,25 +26,3 @@ main h3 {
     gap: 18px;
     position: relative;
 }
-
-.card {
-    width: 180px;
-    height: 250px;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.card img {
-    width: 100%;
-}
-
-.card .cover {
-    width: 100%;
-    aspect-ratio: 1;
-    overflow: hidden;
-}
-
-.card p {
-    color: white;
-}
