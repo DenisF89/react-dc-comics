@@ -7,13 +7,13 @@ function Footer() {
     return  <footer>
                 <BlueBand />
                 <div className={style.fascia_image}>
-                    <div className={style.boxed}>
+                    <div className={"boxed "+style.boxed}>
                         <FooterMenu /> 
                         <div className={style.dc_back}></div>
                     </div>
                 </div>
                 <div className={style.fascia_grey}>
-                    <div className={style.boxed}>
+                    <div className={"boxed "+style.boxed}>
                         <button>
                             SIGN-UP NOW!
                         </button>

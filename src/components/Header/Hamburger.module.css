@@ -1,0 +1,68 @@
+/****************  HAMBURGER RESPONSIVE  ********************/
+
+/* --- bottone hamburger (nascosto su desktop) --- */
+.burger{
+  display: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/*accessibilità screen reader*/
+.sronly{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* icona hamburger con le lineette animate che diventano X */
+        .burgerIcon{
+        width: 28px;
+        height: 2px;
+        display: block;
+        position: relative;
+        background-color: black;
+        transition: transform 0.3s ease;
+        }
+
+        .burgerIcon::before,
+        .burgerIcon::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 28px;
+        height: 2px;
+        background-color: black;
+        transition: transform 0.3s ease;
+        }
+
+        .burgerIcon::before{ top: -8px; }
+        .burgerIcon::after{ top: 8px; }
+
+
+/*Animazione Haburger a X */
+        .burgerOpen .burgerIcon{
+        background: transparent;
+        }
+
+        .burgerOpen .burgerIcon::before{
+        top: 0;
+        transform: rotate(45deg);
+        }
+
+        .burgerOpen .burgerIcon::after{
+        top: 0;
+        transform: rotate(-45deg);
+        }
+
+/* --- MOBILE/TABLET: da 790px in giù --- */
+@media screen and (max-width: 790px){
+  .burger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index:2;
+  }
+}

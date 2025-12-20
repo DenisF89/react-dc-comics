@@ -1,0 +1,125 @@
+/******************   MENU PRINCIPALE   *****************/
+
+.menu {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display:flex;
+    align-items: center;
+    height: 100px;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/******************** EFFETTI CSS MENU  **********************/
+
+.menu a:hover {
+    color: rgb(150, 150, 150);
+}
+
+/* Creo un bordo virtuale sotto il link */
+.menu a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: rgb(150, 150, 150);
+/* Animazione: da width 0% - dal centro - dura 0,35sec */
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.35s ease;
+}
+
+.menu a:hover::after {
+  transform: scaleX(1); /*width 100%*/
+}
+
+.menu a.active{
+    color: rgb(40, 119, 255);
+}
+.menu a.active::after {
+    transform: scaleX(1);
+    background-color: rgb(40, 119, 255);
+}
+
+
+
+/*******************  MENU RESPONSIVE : da 790px in giù *********************/
+
+@media screen and (max-width: 790px){
+
+  /* menu chiuso di default */
+  .menu{
+    position:absolute;
+    top: 104px;
+    right: 0;
+    width: 0;
+    padding: 10px 0;
+    overflow: hidden;
+    background-color:rgb(40, 119, 255);
+    transition: width 0.35s ease;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* menu aperto quando aggiungo la classe */
+  .menuOpen{
+    width:25%;
+    pointer-events: auto;
+  }
+
+  /* menu verticale */
+  .menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .menu li{
+    height: auto;
+  }
+
+  .menu a{
+    padding: 8px 0;
+    height:auto;
+    color: white;
+  }
+    .menu a.active{
+    color:blue;
+  }
+   .menu a.active:hover{
+    color:blue;
+   }
+   .menu a.active::after{
+    background-color: blue;
+   }
+   .menu a::after{
+    background-color: white;
+   }
+   .menu a:hover{
+    color: white;
+   }
+  
+}

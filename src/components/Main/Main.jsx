@@ -6,7 +6,7 @@ function Main() {
     return (
         <main>
             <div className={style.cartoonband}></div>
-            <div className={style.boxed}>
+            <div className={"boxed "+style.boxed_main}>
                 <h3>CURRENT SERIES</h3>
                 {   // Creo un componente Card per ogni elemento dell'array comics, a cui passo i dati con le props
                     comics.map(card =>
