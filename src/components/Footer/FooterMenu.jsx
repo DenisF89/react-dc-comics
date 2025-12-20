@@ -1,5 +1,5 @@
 import style from "./Footer.module.css";
-import menu from "../data/vocimenu.js";
+import menu from "../../data/vocimenu.js";
 import StrutturaMenu from "./StrutturaMenu";
 
 console.log( menu.length );

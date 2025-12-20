@@ -1,5 +1,5 @@
 import style from "./Main.module.css"
-import comics from "../data/comics.js"
+import comics from "../../data/comics.js"
 import Card from "./Card.jsx";
 
 function Main() {
@@ -11,7 +11,7 @@ function Main() {
                 {   // Creo un componente Card per ogni elemento dell'array comics, a cui passo i dati con le props
                     comics.map(card =>
                         <Card 
-                        key={card.id} //non viene passata come props, serve a React come elemento univoco di map
+                        key={"card_"+card.id} //non viene passata come props, serve a React come elemento univoco di map
                         img={card.thumb} //prop img
                         title={card.title} //prop title
                         />
