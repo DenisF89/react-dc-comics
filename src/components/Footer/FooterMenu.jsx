@@ -2,7 +2,6 @@ import style from "./Footer.module.css";
 import menu from "../../data/vocimenu.js";
 import StrutturaMenu from "./StrutturaMenu";
 
-console.log( menu.length );
 const layout = [2,1,1]; //Gestisco le colonne menu del footer 
                         //Es: 1°col=>2menu,2°col=>1 menu,3°col=>1menu
 

@@ -7,7 +7,6 @@ function Header() {
 
 const [open, setOpen] = useState(false);  /* creo uno stato (React) booleano per gestire menu aperto/chiuso */
                                         /*  open è il valore dello stato, setOpen la funzione per cambiarlo */ 
-
 const toggleMenu = () => setOpen((value) => !value) //variabile con funzione setOpen (true=>false e viceversa)                                  
     
     return (

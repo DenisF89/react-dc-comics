@@ -1,0 +1,12 @@
+.filtro{
+    align-self: flex-end;
+    display: flex;
+    gap:10px;
+}
+.filtro button{
+    color:white;
+    padding: 5px 10px;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: grey;
+}
